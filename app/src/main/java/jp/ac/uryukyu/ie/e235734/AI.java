@@ -10,10 +10,15 @@ public class AI {
         while(true){
             System.out.println("コマンドを入力してください。");
             String command = scanner.next();
-            System.out.println("コマンドは"+ command + "です。");
             if(command.equals("exit")){
                 System.out.println("終了します。さようなら");
                 break;
+            }else if(command.equals("今日の天気は？")){
+
+            }else if(command.equals("こんにちは")){
+
+            }else{
+                System.out.println("err:有効なコマンドを入力してください。");
             }
         }      
     }
