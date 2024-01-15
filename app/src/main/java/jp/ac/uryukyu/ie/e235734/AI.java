@@ -9,6 +9,7 @@ public class AI {
         System.out.println("よろしく" + name + "さん");
         Weather weather = new Weather(name);
         Greeting greeting = new Greeting(name);
+        ToDo todo = new ToDo(name);
 
         while(true){
             System.out.println("コマンドを入力してください。");
