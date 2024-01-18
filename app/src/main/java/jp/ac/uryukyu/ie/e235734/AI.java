@@ -21,6 +21,7 @@ public class AI {
         Weather weather = new Weather(name);
         Greeting greeting = new Greeting(name);
         ToDo todo = new ToDo(name);
+        Command commands = new Command();
         while(true){
             System.out.println("Enter the command >>>");
             String command = scanner.next();
@@ -37,6 +38,8 @@ public class AI {
                 todo.SeeToDo();
             }else if(command.equals("RemoveToDo")){
                 todo.RemoveToDo();
+            }else if(command.equals("ShowMeCommands")){
+                commands.function();
             }else{
                 System.out.println("err:UnidentifiedCommand.");
             }
