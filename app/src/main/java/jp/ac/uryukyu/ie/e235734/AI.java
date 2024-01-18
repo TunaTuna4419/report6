@@ -21,7 +21,6 @@ public class AI {
         Weather weather = new Weather(name);
         Greeting greeting = new Greeting(name);
         ToDo todo = new ToDo(name);
-
         while(true){
             System.out.println("Enter the command >>>");
             String command = scanner.next();
@@ -42,5 +41,6 @@ public class AI {
                 System.out.println("err:UnidentifiedCommand.");
             }
         }      
+        scanner.close();
     }
 }
