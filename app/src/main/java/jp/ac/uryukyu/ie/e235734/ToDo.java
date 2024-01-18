@@ -40,7 +40,7 @@ public class ToDo {
     }
     /**
      * ToDoを一覧表示する。
-     * For分を用いて、ArrayList内のToDoを順次表示する。
+     * For文を用いて、ArrayList内のToDoを順次表示する。
      */
     public void SeeToDo(){
         System.out.println("ToDo which you added is....");
