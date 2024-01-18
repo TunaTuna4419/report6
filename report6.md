@@ -2,6 +2,19 @@
 ##### 津波真太郎 235743J  
 提出日 2024/xx/xx
 
-リンク:(https://github.com/naltoma/java_intro2020/blob/master/report/report6_final.md)
+## 編集時情報(提出時に消してね!!!)
+- 課題リンク:(https://github.com/naltoma/java_intro2020/blob/master/report/report6_final.md)
+- JavaDocはクラス、メソッドに書く。
 
+## リポジトリURL
+URL:https://github.com/TunaTuna4419/report6
 
+## 課題説明
+今回設定した課題はタイトルにもあるように「擬似的な対話型AI」である。この課題の内容としては、特定のコマンドを入力すると特定の処理を行うものである。例えば、”今日の天気は？”と打つと”今日の天気は〇〇です”とランダムに天気を返す。  
+このようなプログラムを実装する。
+
+## 取り組み方
+## コード解説
+## 実行結果
+## テスト結果
+## 考察

@@ -1,28 +1,45 @@
 package jp.ac.uryukyu.ie.e235734;
 import java.util.Scanner;
-
+/**
+ * 疑似AIにおいて、名前の取得とコマンド入力待ち、退出の処理を行う。
+ * 現時点で天気、挨拶、ToDoリストを実装済み。
+ * 
+ * 今後の課題として、実際の天気の取得、アラームなどの機能追加がある。
+ * @author 235734J　津波真太郎
+ */
 public class AI {
+    /**
+     * 疑似AI起動メソッド。
+     * 名前を取得し、その名前を用いて各インスタンスを作成する。
+     * 名前取得後は、Exitコマンドが入力されるまでの間永遠にコマンド待ち、コマンド処理を行う。
+     */
     public void start(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("はじめまして。名前を教えて下さい。");
+        System.out.println("What is your name?");
         String name = scanner.next();
-        System.out.println("よろしく" + name + "さん");
+        System.out.println("Nice to meet you" + name + ".");
         Weather weather = new Weather(name);
         Greeting greeting = new Greeting(name);
         ToDo todo = new ToDo(name);
 
         while(true){
-            System.out.println("コマンドを入力してください。");
+            System.out.println("Enter the command >>>");
             String command = scanner.next();
-            if(command.equals("exit")){
-                System.out.println("終了します。さようなら");
+            if(command.equals("Exit")){
+                System.out.println("Shutdown,Good bye.");
                 break;
-            }else if(command.equals("今日の天気は？")){
+            }else if(command.equals("Weather?")){
                 weather.function();
-            }else if(command.equals("こんにちは")){
+            }else if(command.equals("Hello")){
                 greeting.function();
+            }else if(command.equals("AddToDo")){
+                todo.AddToDo();
+            }else if(command.equals("SeeToDo")){
+                todo.SeeToDo();
+            }else if(command.equals("RemoveToDo")){
+                todo.RemoveToDo();
             }else{
-                System.out.println("err:有効なコマンドを入力してください。");
+                System.out.println("err:UnidentifiedCommand.");
             }
         }      
     }
