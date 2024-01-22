@@ -33,6 +33,7 @@ public class AI {
             }else if(command.equals("Hello")){
                 greeting.function();
             }else if(command.equals("AddToDo")){
+                //テストを実行するため、ここのみ入力方法を変更している。
                 System.out.println("ToDo?");
                 String addToDo = scanner.next();
                 todo.AddToDo(addToDo);

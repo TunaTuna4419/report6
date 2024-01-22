@@ -47,7 +47,11 @@ public class ToDo {
         }
         System.out.println("That's all.");
     }
-
+    /**
+     * JUnitテスト用
+     * ToDoの個数を返す。
+     * @return size
+     */
     public int size(){
         System.out.println(todos.size());
         return todos.size();
