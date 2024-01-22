@@ -33,15 +33,18 @@ public class AI {
             }else if(command.equals("Hello")){
                 greeting.function();
             }else if(command.equals("AddToDo")){
-                todo.AddToDo();
+                System.out.println("ToDo?");
+                String addToDo = scanner.next();
+                todo.AddToDo(addToDo);
             }else if(command.equals("SeeToDo")){
                 todo.SeeToDo();
             }else if(command.equals("RemoveToDo")){
                 todo.RemoveToDo();
             }else if(command.equals("ShowMeCommands")){
                 commands.function();
-            }else{
-                System.out.println("err:UnidentifiedCommand.");
+            }else if(command.equals("HowManyToDo")){
+                todo.size();
+            }else{    System.out.println("err:UnidentifiedCommand.");
             }
         }      
         scanner.close();

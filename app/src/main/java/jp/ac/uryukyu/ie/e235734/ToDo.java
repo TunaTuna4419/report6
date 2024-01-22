@@ -15,9 +15,7 @@ public class ToDo {
     /**
      * ToDoを追加する。scannerによって使用者からToDoを受け取り、ArrayListに順次追加していく。
      */
-    public void AddToDo(){
-        System.out.println("ToDo?");
-        String addToDo = scanner.next();
+    public void AddToDo(String addToDo){
         todos.add(addToDo);
         amount += 1;
         System.out.println("ToDo[" + addToDo + "]was added.");
@@ -48,6 +46,11 @@ public class ToDo {
             System.out.println(todos.get(i));
         }
         System.out.println("That's all.");
+    }
+
+    public int size(){
+        System.out.println(todos.size());
+        return todos.size();
     }
 
 }
